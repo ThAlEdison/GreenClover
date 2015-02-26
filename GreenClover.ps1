@@ -1,6 +1,8 @@
-$filename = "C:\WIP\Spiral2.png"
-$bw = 3840
-$bh = 2160
+Param (
+	$filename = "${env:USERPROFILE}\Spiral.png"
+	$bw = 3840
+	$bh = 2160
+)
 
 add-type -AssemblyName System.Drawing
 function ColorFromAhsb {
