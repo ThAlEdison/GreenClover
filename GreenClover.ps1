@@ -47,7 +47,7 @@ $angle=[Math]::pi
 $magnitude=5
 $x=0
 $y=0
-1..194395 | %{
+1..([int]((($hw+2)*($hw+2)+($hh+2.5)*($hh+2.5))/25)) | %{
 $newx = $x+$magnitude*[Math]::cos($angle)
 $newy = $y+$magnitude*[Math]::sin($angle)
 $a=$angle%(2*[Math]::pi)
